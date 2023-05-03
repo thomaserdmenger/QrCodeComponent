@@ -1,0 +1,77 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-background-site: hsl(212, 45%, 89%);
+  --color-background-container: hsl(0, 0%, 100%);
+  --color-text: hsl(220, 15%, 55%);
+  --color-heading: hsl(218, 44%, 22%);
+  --font-weight-heading: 700;
+  --font-weight-text: 400;
+  --border-radius: 15px;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.5;
+}
+
+body {
+  background-color: var(--color-background-site);
+  font-family: 'Outfit', sans-serif;
+}
+
+main {
+  height: 100vh;
+}
+section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+}
+
+.container {
+  background-color: var(--color-background-container);
+  border-radius: var(--border-radius);
+  padding: 2.5rem;
+  text-align: center;
+  width: 37.5rem;
+}
+
+.container h1 {
+  color: var(--color-heading);
+  font-size: 2.5rem;
+  margin-top: 2.5rem;
+}
+
+.container img {
+  border-radius: var(--border-radius);
+  width: 100%;
+}
+
+.container p {
+  color: var(--color-text);
+  font-size: 1.8rem;
+  font-weight: var(--font-weight-text);
+}
+
+.container h1,
+.container p {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.attribution {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
