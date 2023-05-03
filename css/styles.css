@@ -20,13 +20,14 @@ html {
 }
 
 body {
+  align-items: center;
   background-color: var(--color-background-site);
+  display: flex;
   font-family: 'Outfit', sans-serif;
+  justify-content: center;
+  min-height: 100vh;
 }
 
-main {
-  height: 100vh;
-}
 section {
   align-items: center;
   display: flex;
